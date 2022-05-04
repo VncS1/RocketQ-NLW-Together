@@ -16,6 +16,10 @@ route.get('/create-pass', (req, res) => {
     res.render("create-pass")
 })
 
+//Passando as variaveis para a url
+//Formato que o formulário da modal deverá mandar para outra página
+//route.get('/room/:room/:question/:action');
+
 
 //Exportando o route
 module.exports = route

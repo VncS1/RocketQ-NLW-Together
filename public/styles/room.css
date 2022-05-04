@@ -112,6 +112,10 @@
     padding: 2.4rem;
 }
 
+.question-wrapper:last-child {
+    margin-bottom: 5rem;
+}
+
 .question-wrapper .question-content {
     display: flex;
     align-items: flex-start;
