@@ -14,6 +14,9 @@ server.use(express.static("public"))
 //mostrando onde está os arquivos ejs (onde ficam as telas)
 server.set('views', path.join(__dirname, 'views'))
 
+//Middleware para decodificar o conteúdo vindo do formulário e mandar para o controller
+server.use(express.urlencoded({extended: true}));
+
 //Usando o arquivo route
 server.use(route)
 
